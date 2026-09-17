@@ -20,9 +20,9 @@ export  async function GET(request: Request){
     const ogTags = ["og:title", "og:description", "og:type", "og:url", "og:image", "og:site_name"];
     const specificImageUrl = "https://www.ncbank.co.jp/assets/images/ogp.webp";
     //ワンちゃんいらない。
-    let displayRows = [];
+    let displayRows: string[][] = [];
     let hasError = false;
-    let errorDetails = []; // 具体的なリスクを格納
+    let errorDetails: string[] = [];
 
     //スクレイピングの本体
     const res = await fetch(tUrl, {
