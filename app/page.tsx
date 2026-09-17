@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col flex-1 items-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="w-full p-2 text-center">
+      <main className="max-w-lg mx-auto  p-2 text-center">
         <h1 className="text-3xl mb-3 mt-3 text-gray-700">OGPチェックちゃん　IN　NEXTJS</h1>
           <p className="text-gray-600 mb-5">OGP（Open Graph Protocol）の設定状況をチェックできますわ</p>
           <div className="flex justify-center items-center">
